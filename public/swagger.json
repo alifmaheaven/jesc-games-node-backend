@@ -191,14 +191,13 @@
 				"type": "object",
 				"additionalProperties": false
 			},
-			"RoomsFilterInterfaces": {
+			"ChoicesFilterInterfaces": {
 				"properties": {
 					"uuid_exact": {
 						"items": {
 							"type": "string"
 						},
-						"type": "array",
-						"description": "This uuid will be used to filter data exact match"
+						"type": "array"
 					},
 					"name_exact": {
 						"items": {
@@ -207,18 +206,6 @@
 						"type": "array"
 					},
 					"description_exact": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_exact": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_exact": {
 						"items": {
 							"type": "string"
 						},
@@ -244,7 +231,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_exact": {
+					"answer_id_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_exact": {
 						"items": {
 							"type": "string"
 						},
@@ -263,18 +256,6 @@
 						"type": "array"
 					},
 					"description_except": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_except": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_except": {
 						"items": {
 							"type": "string"
 						},
@@ -300,7 +281,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_except": {
+					"answer_id_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_except": {
 						"items": {
 							"type": "string"
 						},
@@ -319,18 +306,6 @@
 						"type": "array"
 					},
 					"description_like": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_like": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_like": {
 						"items": {
 							"type": "string"
 						},
@@ -356,7 +331,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_like": {
+					"answer_id_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_like": {
 						"items": {
 							"type": "string"
 						},
@@ -375,18 +356,6 @@
 						"type": "array"
 					},
 					"description_ilike": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_ilike": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_ilike": {
 						"items": {
 							"type": "string"
 						},
@@ -412,7 +381,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_ilike": {
+					"answer_id_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_ilike": {
 						"items": {
 							"type": "string"
 						},
@@ -431,18 +406,6 @@
 						"type": "array"
 					},
 					"description_startswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_startswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_startswith": {
 						"items": {
 							"type": "string"
 						},
@@ -468,7 +431,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_startswith": {
+					"answer_id_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_startswith": {
 						"items": {
 							"type": "string"
 						},
@@ -487,18 +456,6 @@
 						"type": "array"
 					},
 					"description_istartswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_istartswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_istartswith": {
 						"items": {
 							"type": "string"
 						},
@@ -524,7 +481,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_istartswith": {
+					"answer_id_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_istartswith": {
 						"items": {
 							"type": "string"
 						},
@@ -543,18 +506,6 @@
 						"type": "array"
 					},
 					"description_endswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_endswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_endswith": {
 						"items": {
 							"type": "string"
 						},
@@ -580,7 +531,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_endswith": {
+					"answer_id_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_endswith": {
 						"items": {
 							"type": "string"
 						},
@@ -599,18 +556,6 @@
 						"type": "array"
 					},
 					"description_iendswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"media_iendswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_code_iendswith": {
 						"items": {
 							"type": "string"
 						},
@@ -636,7 +581,13 @@
 						},
 						"type": "array"
 					},
-					"user_id_iendswith": {
+					"answer_id_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"option_id_iendswith": {
 						"items": {
 							"type": "string"
 						},
@@ -714,7 +665,740 @@
 				"type": "object",
 				"additionalProperties": false
 			},
-			"RoomsInterfaces": {
+			"ChoicesInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"created_at": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"updated_at": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"is_active": {
+						"type": "boolean"
+					},
+					"answer_id": {
+						"type": "string"
+					},
+					"option_id": {
+						"type": "string"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ChoicesCreateInterfaces": {
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"answer_id": {
+						"type": "string"
+					},
+					"option_id": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"name",
+					"description",
+					"answer_id",
+					"option_id"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ChoicesUpdateInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"is_active": {
+						"type": "boolean"
+					},
+					"answer_id": {
+						"type": "string"
+					},
+					"option_id": {
+						"type": "string"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ChoicesDeleteInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"uuid"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"ChoicesUploadDeleteInterfaces": {
+				"properties": {
+					"links": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"links"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"OptionsFilterInterfaces": {
+				"properties": {
+					"uuid_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_exact": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_exact": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_exact": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_exact": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_except": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_except": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_except": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_except": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_like": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_like": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_like": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_like": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_ilike": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_ilike": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_ilike": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_ilike": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_startswith": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_startswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_startswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_startswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_istartswith": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_istartswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_istartswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_istartswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_endswith": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_endswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_endswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_endswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"type_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"time_iendswith": {
+						"items": {
+							"type": "number",
+							"format": "double"
+						},
+						"type": "array"
+					},
+					"created_at_iendswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_iendswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_iendswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"point_id_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_id_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_gt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_gt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_gte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_gte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_lt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_lt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_lte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_lte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"order_by_asc": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"order_by_desc": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"OptionsInterfaces": {
 				"properties": {
 					"uuid": {
 						"type": "string"
@@ -728,7 +1412,10 @@
 					"media": {
 						"type": "string"
 					},
-					"room_code": {
+					"type": {
+						"type": "string"
+					},
+					"time": {
 						"type": "number",
 						"format": "double"
 					},
@@ -743,7 +1430,10 @@
 					"is_active": {
 						"type": "boolean"
 					},
-					"user_id": {
+					"point_id": {
+						"type": "string"
+					},
+					"room_id": {
 						"type": "string"
 					}
 				},
@@ -752,16 +1442,18 @@
 					"name",
 					"description",
 					"media",
-					"room_code",
+					"type",
+					"time",
 					"created_at",
 					"updated_at",
 					"is_active",
-					"user_id"
+					"point_id",
+					"room_id"
 				],
 				"type": "object",
 				"additionalProperties": false
 			},
-			"RoomsCreateInterfaces": {
+			"OptionsCreateInterfaces": {
 				"properties": {
 					"name": {
 						"type": "string"
@@ -772,21 +1464,33 @@
 					"media": {
 						"type": "string"
 					},
-					"room_code": {
+					"type": {
+						"type": "string"
+					},
+					"time": {
 						"type": "number",
 						"format": "double"
+					},
+					"point_id": {
+						"type": "string"
+					},
+					"room_id": {
+						"type": "string"
 					}
 				},
 				"required": [
 					"name",
 					"description",
 					"media",
-					"room_code"
+					"type",
+					"time",
+					"point_id",
+					"room_id"
 				],
 				"type": "object",
 				"additionalProperties": false
 			},
-			"RoomsUpdateInterfaces": {
+			"OptionsUpdateInterfaces": {
 				"properties": {
 					"uuid": {
 						"type": "string"
@@ -800,22 +1504,27 @@
 					"media": {
 						"type": "string"
 					},
-					"room_code": {
+					"type": {
+						"type": "string"
+					},
+					"time": {
 						"type": "number",
 						"format": "double"
+					},
+					"is_active": {
+						"type": "boolean"
+					},
+					"point_id": {
+						"type": "string"
+					},
+					"room_id": {
+						"type": "string"
 					}
 				},
-				"required": [
-					"uuid",
-					"name",
-					"description",
-					"media",
-					"room_code"
-				],
 				"type": "object",
 				"additionalProperties": false
 			},
-			"RoomsDeleteInterfaces": {
+			"OptionsDeleteInterfaces": {
 				"properties": {
 					"uuid": {
 						"type": "string"
@@ -827,7 +1536,7 @@
 				"type": "object",
 				"additionalProperties": false
 			},
-			"RoomsUploadDeleteInterfaces": {
+			"OptionsUploadDeleteInterfaces": {
 				"properties": {
 					"links": {
 						"items": {
@@ -838,6 +1547,456 @@
 				},
 				"required": [
 					"links"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"PointsFilterInterfaces": {
+				"properties": {
+					"uuid_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_exact": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_exact": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_exact": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_except": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_except": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_except": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_like": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_like": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_like": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_ilike": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_ilike": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_ilike": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_startswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_startswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_startswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_istartswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_istartswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_istartswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_endswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_endswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_endswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"uuid_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_iendswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_iendswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_iendswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"created_at_gt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_gt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_gte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_gte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_lt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_lt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_lte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_lte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"order_by_asc": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"order_by_desc": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"PointsInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"created_at": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"updated_at": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"is_active": {
+						"type": "boolean"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"PointsCreateInterfaces": {
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"name",
+					"description"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"PointsUpdateInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"is_active": {
+						"type": "boolean"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"PointsDeleteInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"uuid"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -1556,6 +2715,657 @@
 				],
 				"type": "object",
 				"additionalProperties": false
+			},
+			"RoomsFilterInterfaces": {
+				"properties": {
+					"uuid_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array",
+						"description": "This uuid will be used to filter data exact match"
+					},
+					"name_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_exact": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_exact": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_exact": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_exact": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_except": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_except": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_except": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_except": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_like": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_like": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_like": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_like": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_ilike": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_ilike": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_ilike": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_ilike": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_startswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_startswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_startswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_startswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_istartswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_istartswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_istartswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_istartswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_endswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_endswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_endswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_endswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"uuid_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"name_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"description_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"media_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"room_code_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_iendswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_iendswith": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"is_active_iendswith": {
+						"items": {
+							"type": "boolean"
+						},
+						"type": "array"
+					},
+					"user_id_iendswith": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"created_at_gt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_gt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_gte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_gte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_lt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_lt": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"created_at_lte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"updated_at_lte": {
+						"items": {
+							"type": "string",
+							"format": "date-time"
+						},
+						"type": "array"
+					},
+					"order_by_asc": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					},
+					"order_by_desc": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"type": "object",
+				"additionalProperties": false
+			},
+			"RoomsInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"media": {
+						"type": "string"
+					},
+					"room_code": {
+						"type": "number",
+						"format": "double"
+					},
+					"created_at": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"updated_at": {
+						"type": "string",
+						"format": "date-time"
+					},
+					"is_active": {
+						"type": "boolean"
+					},
+					"user_id": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"uuid",
+					"name",
+					"description",
+					"media",
+					"room_code",
+					"created_at",
+					"updated_at",
+					"is_active",
+					"user_id"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"RoomsCreateInterfaces": {
+				"properties": {
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"media": {
+						"type": "string"
+					},
+					"room_code": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"name",
+					"description",
+					"media",
+					"room_code"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"RoomsUpdateInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					},
+					"name": {
+						"type": "string"
+					},
+					"description": {
+						"type": "string"
+					},
+					"media": {
+						"type": "string"
+					},
+					"room_code": {
+						"type": "number",
+						"format": "double"
+					}
+				},
+				"required": [
+					"uuid",
+					"name",
+					"description",
+					"media",
+					"room_code"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"RoomsDeleteInterfaces": {
+				"properties": {
+					"uuid": {
+						"type": "string"
+					}
+				},
+				"required": [
+					"uuid"
+				],
+				"type": "object",
+				"additionalProperties": false
+			},
+			"RoomsUploadDeleteInterfaces": {
+				"properties": {
+					"links": {
+						"items": {
+							"type": "string"
+						},
+						"type": "array"
+					}
+				},
+				"required": [
+					"links"
+				],
+				"type": "object",
+				"additionalProperties": false
 			}
 		},
 		"securitySchemes": {
@@ -1707,7 +3517,7 @@
 				"parameters": []
 			}
 		},
-		"/api/v1/rooms": {
+		"/api/v1/choices": {
 			"get": {
 				"operationId": "GetData",
 				"responses": {
@@ -1724,7 +3534,7 @@
 				},
 				"description": "Retrieves the details of an existing user.\nSupply the unique user ID from either and receive corresponding user details.",
 				"tags": [
-					"Rooms"
+					"Choices"
 				],
 				"security": [
 					{
@@ -1733,7 +3543,6 @@
 				],
 				"parameters": [
 					{
-						"description": "This uuid will be used to filter data exact match",
 						"in": "query",
 						"name": "uuid_exact",
 						"required": false,
@@ -1758,28 +3567,6 @@
 					{
 						"in": "query",
 						"name": "description_exact",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_exact",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_exact",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -1825,7 +3612,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_exact",
+						"name": "answer_id_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_exact",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -1859,28 +3657,6 @@
 					{
 						"in": "query",
 						"name": "description_except",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_except",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_except",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -1926,7 +3702,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_except",
+						"name": "answer_id_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_except",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -1960,28 +3747,6 @@
 					{
 						"in": "query",
 						"name": "description_like",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_like",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_like",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2027,7 +3792,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_like",
+						"name": "answer_id_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_like",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2061,28 +3837,6 @@
 					{
 						"in": "query",
 						"name": "description_ilike",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_ilike",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_ilike",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2128,7 +3882,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_ilike",
+						"name": "answer_id_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_ilike",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2162,28 +3927,6 @@
 					{
 						"in": "query",
 						"name": "description_startswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_startswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_startswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2229,7 +3972,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_startswith",
+						"name": "answer_id_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_startswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2263,28 +4017,6 @@
 					{
 						"in": "query",
 						"name": "description_istartswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_istartswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_istartswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2330,7 +4062,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_istartswith",
+						"name": "answer_id_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_istartswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2364,28 +4107,6 @@
 					{
 						"in": "query",
 						"name": "description_endswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_endswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_endswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2431,7 +4152,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_endswith",
+						"name": "answer_id_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_endswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2465,28 +4197,6 @@
 					{
 						"in": "query",
 						"name": "description_iendswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "media_iendswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_code_iendswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2532,7 +4242,18 @@
 					},
 					{
 						"in": "query",
-						"name": "user_id_iendswith",
+						"name": "answer_id_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "option_id_iendswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -2669,14 +4390,14 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/RoomsInterfaces"
+									"$ref": "#/components/schemas/ChoicesInterfaces"
 								}
 							}
 						}
 					}
 				},
 				"tags": [
-					"Rooms"
+					"Choices"
 				],
 				"security": [
 					{
@@ -2689,7 +4410,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"$ref": "#/components/schemas/RoomsCreateInterfaces"
+								"$ref": "#/components/schemas/ChoicesCreateInterfaces"
 							}
 						}
 					}
@@ -2703,14 +4424,14 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/RoomsInterfaces"
+									"$ref": "#/components/schemas/ChoicesInterfaces"
 								}
 							}
 						}
 					}
 				},
 				"tags": [
-					"Rooms"
+					"Choices"
 				],
 				"security": [
 					{
@@ -2723,7 +4444,7 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"$ref": "#/components/schemas/RoomsUpdateInterfaces"
+								"$ref": "#/components/schemas/ChoicesUpdateInterfaces"
 							}
 						}
 					}
@@ -2737,14 +4458,14 @@
 						"content": {
 							"application/json": {
 								"schema": {
-									"$ref": "#/components/schemas/RoomsInterfaces"
+									"$ref": "#/components/schemas/ChoicesInterfaces"
 								}
 							}
 						}
 					}
 				},
 				"tags": [
-					"Rooms"
+					"Choices"
 				],
 				"security": [
 					{
@@ -2757,14 +4478,14 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"$ref": "#/components/schemas/RoomsDeleteInterfaces"
+								"$ref": "#/components/schemas/ChoicesDeleteInterfaces"
 							}
 						}
 					}
 				}
 			}
 		},
-		"/api/v1/rooms/upload": {
+		"/api/v1/choices/upload": {
 			"post": {
 				"operationId": "UploadFile",
 				"responses": {
@@ -2778,7 +4499,7 @@
 					}
 				},
 				"tags": [
-					"Rooms"
+					"Choices"
 				],
 				"security": [
 					{
@@ -2822,7 +4543,7 @@
 					}
 				},
 				"tags": [
-					"Rooms"
+					"Choices"
 				],
 				"security": [
 					{
@@ -2835,7 +4556,2117 @@
 					"content": {
 						"application/json": {
 							"schema": {
-								"$ref": "#/components/schemas/RoomsUploadDeleteInterfaces"
+								"$ref": "#/components/schemas/ChoicesUploadDeleteInterfaces"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/options": {
+			"get": {
+				"operationId": "GetData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/PaginationInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"description": "Retrieves the details of an existing user.\nSupply the unique user ID from either and receive corresponding user details.",
+				"tags": [
+					"Options"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "uuid_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "type_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "time_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "number",
+								"format": "double"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "point_id_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_id_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_gt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_gt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_gte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_gte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_lt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_lt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_lte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_lte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "order_by_asc",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "order_by_desc",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				]
+			},
+			"post": {
+				"operationId": "CreateData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/OptionsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Options"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/OptionsCreateInterfaces"
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"operationId": "UpdateData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/OptionsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Options"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/OptionsUpdateInterfaces"
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/OptionsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Options"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/OptionsDeleteInterfaces"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/options/upload": {
+			"post": {
+				"operationId": "UploadFile",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Options"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"multipart/form-data": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"files": {
+										"items": {
+											"type": "string",
+											"format": "binary"
+										},
+										"type": "array"
+									}
+								},
+								"required": [
+									"files"
+								]
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteFile",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Options"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/OptionsUploadDeleteInterfaces"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/points": {
+			"get": {
+				"operationId": "GetData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/PaginationInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"description": "Retrieves the details of an existing user.\nSupply the unique user ID from either and receive corresponding user details.",
+				"tags": [
+					"Points"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [
+					{
+						"in": "query",
+						"name": "uuid_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_gt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_gt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_gte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_gte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_lt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_lt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_lte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_lte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "order_by_asc",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "order_by_desc",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				]
+			},
+			"post": {
+				"operationId": "CreateData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/PointsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Points"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/PointsCreateInterfaces"
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"operationId": "UpdateData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/PointsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Points"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/PointsUpdateInterfaces"
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/PointsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Points"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/PointsDeleteInterfaces"
 							}
 						}
 					}
@@ -4023,6 +7854,1141 @@
 						"application/json": {
 							"schema": {
 								"$ref": "#/components/schemas/QuestionsUploadDeleteInterfaces"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/rooms": {
+			"get": {
+				"operationId": "GetData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/PaginationInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"description": "Retrieves the details of an existing user.\nSupply the unique user ID from either and receive corresponding user details.",
+				"tags": [
+					"Rooms"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [
+					{
+						"description": "This uuid will be used to filter data exact match",
+						"in": "query",
+						"name": "uuid_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_exact",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_except",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_like",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_ilike",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_startswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_istartswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_endswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "uuid_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "name_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "description_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "media_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "room_code_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "is_active_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "boolean"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "user_id_iendswith",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_gt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_gt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_gte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_gte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_lt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_lt",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "created_at_lte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "updated_at_lte",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string",
+								"format": "date-time"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "order_by_asc",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					},
+					{
+						"in": "query",
+						"name": "order_by_desc",
+						"required": false,
+						"schema": {
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						}
+					}
+				]
+			},
+			"post": {
+				"operationId": "CreateData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/RoomsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Rooms"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/RoomsCreateInterfaces"
+							}
+						}
+					}
+				}
+			},
+			"put": {
+				"operationId": "UpdateData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/RoomsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Rooms"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/RoomsUpdateInterfaces"
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteData",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"$ref": "#/components/schemas/RoomsInterfaces"
+								}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Rooms"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/RoomsDeleteInterfaces"
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/v1/rooms/upload": {
+			"post": {
+				"operationId": "UploadFile",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Rooms"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"multipart/form-data": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"files": {
+										"items": {
+											"type": "string",
+											"format": "binary"
+										},
+										"type": "array"
+									}
+								},
+								"required": [
+									"files"
+								]
+							}
+						}
+					}
+				}
+			},
+			"delete": {
+				"operationId": "DeleteFile",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {}
+							}
+						}
+					}
+				},
+				"tags": [
+					"Rooms"
+				],
+				"security": [
+					{
+						"bearer": []
+					}
+				],
+				"parameters": [],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"$ref": "#/components/schemas/RoomsUploadDeleteInterfaces"
 							}
 						}
 					}

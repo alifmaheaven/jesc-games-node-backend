@@ -1,8 +1,11 @@
 import express from 'express';
 
 import auth from './auth';
-import rooms from './rooms';
+import choices from './choices';
+import options from './options';
+import points from './points';
 import questions from './questions';
+import rooms from './rooms';
 
 import response from '../utils/response';
 
@@ -15,7 +18,10 @@ router.get<{}, {}>('/', (req, res) => {
 });
 
 router.use('/auth', auth);
-router.use('/rooms', rooms);
+router.use('/choices', choices);
+router.use('/options', options);
+router.use('/points', points);
 router.use('/questions', questions);
+router.use('/rooms', rooms);
 
 export default router;
