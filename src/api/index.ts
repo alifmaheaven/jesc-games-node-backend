@@ -1,7 +1,8 @@
 import express from 'express';
 
 import auth from './auth';
-import crud from './crud';
+import rooms from './rooms';
+import questions from './questions';
 
 import response from '../utils/response';
 
@@ -14,6 +15,7 @@ router.get<{}, {}>('/', (req, res) => {
 });
 
 router.use('/auth', auth);
-router.use('/crud', crud);
+router.use('/rooms', rooms);
+router.use('/questions', questions);
 
 export default router;
