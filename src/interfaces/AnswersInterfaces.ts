@@ -18,6 +18,7 @@ interface AnswersInterfaces {
   question_id?: string;
   room_id?: string;
   user_id?: string;
+  option_id?: string;
 }
 
 interface AnswersUpdateInterfaces {
@@ -28,6 +29,7 @@ interface AnswersUpdateInterfaces {
   question_id?: string;
   room_id?: string;
   user_id?: string;
+  option_id?: string;
 }
 
 interface AnswersCreateInterfaces {
@@ -36,6 +38,7 @@ interface AnswersCreateInterfaces {
   question_id: string;
   room_id: string;
   user_id: string;
+  option_id: string;
 }
 
 interface AnswersDeleteInterfaces {
@@ -52,6 +55,7 @@ interface AnswersFilterInterfaces {
   question_id_exact?: string[];
   room_id_exact?: string[];
   user_id_exact?: string[];
+  option_id_exact?: string[];
   uuid_except?: string[];
   name_except?: string[];
   description_except?: string[];
@@ -61,6 +65,7 @@ interface AnswersFilterInterfaces {
   question_id_except?: string[];
   room_id_except?: string[];
   user_id_except?: string[];
+  option_id_except?: string[];
   uuid_like?: string[];
   name_like?: string[];
   description_like?: string[];
@@ -70,6 +75,7 @@ interface AnswersFilterInterfaces {
   question_id_like?: string[];
   room_id_like?: string[];
   user_id_like?: string[];
+  option_id_like?: string[];
   uuid_ilike?: string[];
   name_ilike?: string[];
   description_ilike?: string[];
@@ -79,6 +85,7 @@ interface AnswersFilterInterfaces {
   question_id_ilike?: string[];
   room_id_ilike?: string[];
   user_id_ilike?: string[];
+  option_id_ilike?: string[];
   uuid_startswith?: string[];
   name_startswith?: string[];
   description_startswith?: string[];
@@ -88,6 +95,7 @@ interface AnswersFilterInterfaces {
   question_id_startswith?: string[];
   room_id_startswith?: string[];
   user_id_startswith?: string[];
+  option_id_startswith?: string[];
   uuid_istartswith?: string[];
   name_istartswith?: string[];
   description_istartswith?: string[];
@@ -97,6 +105,7 @@ interface AnswersFilterInterfaces {
   question_id_istartswith?: string[];
   room_id_istartswith?: string[];
   user_id_istartswith?: string[];
+  option_id_istartswith?: string[];
   uuid_endswith?: string[];
   name_endswith?: string[];
   description_endswith?: string[];
@@ -106,6 +115,7 @@ interface AnswersFilterInterfaces {
   question_id_endswith?: string[];
   room_id_endswith?: string[];
   user_id_endswith?: string[];
+  option_id_endswith?: string[];
   uuid_iendswith?: string[];
   name_iendswith?: string[];
   description_iendswith?: string[];
@@ -115,6 +125,7 @@ interface AnswersFilterInterfaces {
   question_id_iendswith?: string[];
   room_id_iendswith?: string[];
   user_id_iendswith?: string[];
+  option_id_iendswith?: string[];
   // gt
   created_at_gt?: Date[];
   updated_at_gt?: Date[];

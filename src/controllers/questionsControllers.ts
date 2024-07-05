@@ -56,7 +56,7 @@ export default class Question extends Controller {
     @Request() req: any,
       @Queries() query: QuestionsFilterInterfaces,
   ): Promise<PaginationInterfaces> {
-    const DB_NAME = 'rooms';
+    const DB_NAME = 'questions';
     try {
       const result = await pagination(query, DB_NAME, pool);
       return result; // Add this line
@@ -77,7 +77,6 @@ export default class Question extends Controller {
       const result = await createDataUtil(DB_NAME, requestBody, {
         user_id: req.auth_data.uuid,
         media: requestBody?.media && await moveToPermanentFiles(requestBody?.media, 'rooms') || null,
-        room_code: Math.floor(100000 + Math.random() * 900000)
       });
       return result?.rows[0]; // Add this line
     } catch (error) {

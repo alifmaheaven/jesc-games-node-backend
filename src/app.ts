@@ -14,7 +14,11 @@ import MessageResponse from './interfaces/MessageResponse';
 
 const app : Application = express();
 app.use(morgan('dev'));
-app.use(helmet());
+app.use(
+  helmet({
+    // crossOriginResourcePolicy: false,
+  })
+);
 app.use(cors());
 app.use(express.json());
 

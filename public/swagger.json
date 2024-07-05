@@ -804,7 +804,7 @@
 						},
 						"type": "array"
 					},
-					"time_exact": {
+					"is_correct_exact": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -831,13 +831,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_exact": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_exact": {
+					"question_id_exact": {
 						"items": {
 							"type": "string"
 						},
@@ -873,7 +867,7 @@
 						},
 						"type": "array"
 					},
-					"time_except": {
+					"is_correct_except": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -900,13 +894,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_except": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_except": {
+					"question_id_except": {
 						"items": {
 							"type": "string"
 						},
@@ -942,7 +930,7 @@
 						},
 						"type": "array"
 					},
-					"time_like": {
+					"is_correct_like": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -969,13 +957,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_like": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_like": {
+					"question_id_like": {
 						"items": {
 							"type": "string"
 						},
@@ -1011,7 +993,7 @@
 						},
 						"type": "array"
 					},
-					"time_ilike": {
+					"is_correct_ilike": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -1038,13 +1020,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_ilike": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_ilike": {
+					"question_id_ilike": {
 						"items": {
 							"type": "string"
 						},
@@ -1080,7 +1056,7 @@
 						},
 						"type": "array"
 					},
-					"time_startswith": {
+					"is_correct_startswith": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -1107,13 +1083,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_startswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_startswith": {
+					"question_id_startswith": {
 						"items": {
 							"type": "string"
 						},
@@ -1149,7 +1119,7 @@
 						},
 						"type": "array"
 					},
-					"time_istartswith": {
+					"is_correct_istartswith": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -1176,13 +1146,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_istartswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_istartswith": {
+					"question_id_istartswith": {
 						"items": {
 							"type": "string"
 						},
@@ -1218,7 +1182,7 @@
 						},
 						"type": "array"
 					},
-					"time_endswith": {
+					"is_correct_endswith": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -1245,13 +1209,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_endswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_endswith": {
+					"question_id_endswith": {
 						"items": {
 							"type": "string"
 						},
@@ -1287,7 +1245,7 @@
 						},
 						"type": "array"
 					},
-					"time_iendswith": {
+					"is_correct_iendswith": {
 						"items": {
 							"type": "number",
 							"format": "double"
@@ -1314,13 +1272,7 @@
 						},
 						"type": "array"
 					},
-					"point_id_iendswith": {
-						"items": {
-							"type": "string"
-						},
-						"type": "array"
-					},
-					"room_id_iendswith": {
+					"question_id_iendswith": {
 						"items": {
 							"type": "string"
 						},
@@ -1415,7 +1367,7 @@
 					"type": {
 						"type": "string"
 					},
-					"time": {
+					"is_correct": {
 						"type": "number",
 						"format": "double"
 					},
@@ -1430,10 +1382,7 @@
 					"is_active": {
 						"type": "boolean"
 					},
-					"point_id": {
-						"type": "string"
-					},
-					"room_id": {
+					"question_id": {
 						"type": "string"
 					}
 				},
@@ -1443,12 +1392,11 @@
 					"description",
 					"media",
 					"type",
-					"time",
+					"is_correct",
 					"created_at",
 					"updated_at",
 					"is_active",
-					"point_id",
-					"room_id"
+					"question_id"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -1467,14 +1415,11 @@
 					"type": {
 						"type": "string"
 					},
-					"time": {
+					"is_correct": {
 						"type": "number",
 						"format": "double"
 					},
-					"point_id": {
-						"type": "string"
-					},
-					"room_id": {
+					"question_id": {
 						"type": "string"
 					}
 				},
@@ -1483,9 +1428,8 @@
 					"description",
 					"media",
 					"type",
-					"time",
-					"point_id",
-					"room_id"
+					"is_correct",
+					"question_id"
 				],
 				"type": "object",
 				"additionalProperties": false
@@ -1507,17 +1451,14 @@
 					"type": {
 						"type": "string"
 					},
-					"time": {
+					"is_correct": {
 						"type": "number",
 						"format": "double"
 					},
 					"is_active": {
 						"type": "boolean"
 					},
-					"point_id": {
-						"type": "string"
-					},
-					"room_id": {
+					"question_id": {
 						"type": "string"
 					}
 				},
@@ -4645,7 +4586,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_exact",
+						"name": "is_correct_exact",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -4692,18 +4633,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_exact",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_exact",
+						"name": "question_id_exact",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -4769,7 +4699,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_except",
+						"name": "is_correct_except",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -4816,18 +4746,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_except",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_except",
+						"name": "question_id_except",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -4893,7 +4812,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_like",
+						"name": "is_correct_like",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -4940,18 +4859,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_like",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_like",
+						"name": "question_id_like",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5017,7 +4925,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_ilike",
+						"name": "is_correct_ilike",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5064,18 +4972,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_ilike",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_ilike",
+						"name": "question_id_ilike",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5141,7 +5038,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_startswith",
+						"name": "is_correct_startswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5188,18 +5085,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_startswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_startswith",
+						"name": "question_id_startswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5265,7 +5151,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_istartswith",
+						"name": "is_correct_istartswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5312,18 +5198,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_istartswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_istartswith",
+						"name": "question_id_istartswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5389,7 +5264,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_endswith",
+						"name": "is_correct_endswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5436,18 +5311,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_endswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_endswith",
+						"name": "question_id_endswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5513,7 +5377,7 @@
 					},
 					{
 						"in": "query",
-						"name": "time_iendswith",
+						"name": "is_correct_iendswith",
 						"required": false,
 						"schema": {
 							"type": "array",
@@ -5560,18 +5424,7 @@
 					},
 					{
 						"in": "query",
-						"name": "point_id_iendswith",
-						"required": false,
-						"schema": {
-							"type": "array",
-							"items": {
-								"type": "string"
-							}
-						}
-					},
-					{
-						"in": "query",
-						"name": "room_id_iendswith",
+						"name": "question_id_iendswith",
 						"required": false,
 						"schema": {
 							"type": "array",

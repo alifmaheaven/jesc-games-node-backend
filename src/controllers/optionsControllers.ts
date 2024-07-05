@@ -79,7 +79,6 @@ export default class Room extends Controller {
       const result = await createDataUtil(DB_NAME, requestBody, {
         user_id: req.auth_data.uuid,
         media: requestBody?.media && await moveToPermanentFiles(requestBody?.media, 'options') || null,
-        room_code: Math.floor(100000 + Math.random() * 900000)
       });
       return result?.rows[0]; // Add this line
     } catch (error) {
